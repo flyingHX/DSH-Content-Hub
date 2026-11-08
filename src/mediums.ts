@@ -31,7 +31,7 @@ export interface MediumTemplate {
 }
 
 /** Media with an authored orchestration template. */
-export const SUPPORTED_MEDIA: readonly string[] = ['article', 'short_video']
+export const SUPPORTED_MEDIA: readonly string[] = ['article', 'short_video', 'card_series', 'podcast_script']
 
 /** Strip a trailing `# comment` outside of an inline list or quotes. */
 function stripComment(line: string): string {

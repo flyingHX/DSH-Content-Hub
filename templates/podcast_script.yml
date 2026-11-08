@@ -1,0 +1,22 @@
+medium: podcast_script
+description: 播客口播稿，cold_open → thesis → evidence_walk → close
+sections:
+  - label: cold_open
+    priority: 1
+    max_atoms: 1
+    atom_preference: [story, question]
+    rule: "15 秒内让听众知道这期为什么值得听，用故事场景或一个反常识问题开场，禁止以‘今天我们来聊聊’开头"
+  - label: thesis
+    priority: 2
+    max_atoms: 1
+    atom_preference: [claim]
+    rule: "3 分钟内亮出核心主张，用口语化短句，不要 bury the lede"
+  - label: evidence_walk
+    max_atoms: 3
+    atom_preference: [evidence, story]
+    rule: "每条证据之间必须有口语过渡句（‘但有意思的是’‘换句话说’‘这让我想到’），禁止连续罗列数据；故事可作为证据的软化剂"
+  - label: close
+    priority: 1
+    max_atoms: 1
+    atom_preference: [step, quote, claim]
+    rule: "以一个可执行的动作或一个开放问题收尾，为评论区留钩子；不要总结全文"

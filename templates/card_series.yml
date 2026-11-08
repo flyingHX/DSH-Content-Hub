@@ -1,0 +1,17 @@
+medium: card_series
+description: 图文卡片系列，5-9 张，首卡钩子、末卡收尾
+sections:
+  - label: cover
+    priority: 1
+    max_atoms: 1
+    atom_preference: [quote, question, story]
+    rule: "首卡必须能在 1 秒内制造信息缺口或情绪冲击，优先用金句或反常识问句，禁止用背景介绍开场"
+  - label: body_cards
+    max_atoms: 4
+    atom_preference: [evidence, claim, step]
+    rule: "每张卡只承载一个信息点：一条数据、一个观点或一个步骤。证据卡需标注数字来源；步骤卡可拆为多张但每张只放一步"
+  - label: closer
+    priority: 1
+    max_atoms: 1
+    atom_preference: [quote, claim]
+    rule: "末卡给出保存或转发的理由：一句可带走的判断或金句，不要重复首卡内容"
