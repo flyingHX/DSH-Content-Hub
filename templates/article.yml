@@ -1,0 +1,21 @@
+medium: article
+label: 深度文章
+sections:
+  - label: lede
+    atom_preference: [story, question, claim, evidence]
+    rule: 以一个故事、主张或问题开场，在开头抓住读者
+  - label: thesis
+    atom_preference: [claim]
+    priority: 1
+    rule: 亮出核心主张，不要拖到结尾才揭示论点
+  - label: evidence_walk
+    atom_preference: [evidence, claim, story]
+    max_atoms: 4
+    rule: 用证据支撑主张，条理清晰、层层递进
+  - label: how_to
+    atom_preference: [step]
+    max_atoms: 3
+    rule: 给出可操作的步骤或方法
+  - label: close
+    atom_preference: [quote, question, claim]
+    rule: 以金句或开放问题收尾，给读者一个值得记住的点

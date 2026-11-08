@@ -1,0 +1,9 @@
+# Content Hub bundle patch: one Host plugin row registering the five
+# content-repurposing tools (ingest_source, extract_atoms, adapt_for_medium,
+# assemble_pack, get_project_state). The plugin injects `tools` and
+# `workingDirectory` so it can persist project state under the session's
+# working directory.
+- insert:
+    - id: content-hub
+      name: '@local/dsh-content-hub'
+      config: {}

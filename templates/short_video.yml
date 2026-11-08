@@ -1,0 +1,16 @@
+medium: short_video
+label: 短视频分镜
+sections:
+  - label: hook
+    duration_seconds: 0-3
+    atom_preference: [story, question, quote]
+    rule: 必须在前3秒制造信息缺口或情绪冲击，禁止以背景介绍开场
+  - label: tension
+    duration_seconds: 3-15
+    atom_preference: [claim, evidence]
+    rule: 用一条主张建立张力，用一条证据让人相信这不是空话
+  - label: resolution
+    duration_seconds: 15-30
+    atom_preference: [step, quote, claim]
+    priority: 1
+    rule: 给出一个可带走的东西：一个步骤、一句金句，或一个值得转发的判断
