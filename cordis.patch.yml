@@ -5,5 +5,5 @@
 # working directory.
 - insert:
     - id: content-hub
-      name: '@local/dsh-content-hub'
+      name: 'dsh-content-hub'
       config: {}
